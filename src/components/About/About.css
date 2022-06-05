@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Anthony";
+  src: local("Rajdhani"), url(../../fonts/Anthony.woff2) format("truetype");
+}
+
+#section-about {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  box-sizing: content-box;
+  position: relative;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+}
+
+.section-title-about {
+  font-family: "Anthony";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 50px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 100%;
+  -webkit-text-fill-color: black;
+  /* border-style: solid;
+  border-width: 1px; */
+  padding: 3px;
+  /* background-color: black; */
+  /* -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
+}
+
+.section-text-about {
+  padding: 0 5px;
+  font-family: "Milimeter";
+  font-size: 14px;
+  /* line-height: 24px; */
+  text-align: justify;
+  overflow: auto;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.section-divider-about {
+  width: 64px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: black;
+  background: "linear-gradient(270deg, #F46737 0%, #945DD6 100%)";
+  margin: "4rem ";
+}
+
+@media (max-width: 600px) {
+  #section-about {
+    padding: 5px !important;
+  }
+}

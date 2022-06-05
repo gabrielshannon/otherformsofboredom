@@ -1,0 +1,14 @@
+.background-image-div {
+  /* max-width: 1240px; */
+  /* display: flex; */
+}
+
+.background-image {
+  /* width: 90%; */
+}
+
+@media (max-width: 600px) {
+  .background-image {
+    width: 900px;
+  }
+}

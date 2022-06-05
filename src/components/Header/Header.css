@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "Anthony";
+  src: local("Rajdhani"), url(../../fonts/Anthony.woff2) format("truetype");
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.OFOB-logo {
+  padding-top: 2px;
+  padding-left: 10px;
+  width: 80px;
+}
+
+.container-header {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 2rem;
+  padding: 10px;
+  background-color: black;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-top: none;
+}
+
+.container-link-1 {
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.container-link-2 {
+  grid-area: 1 / 2 / 2 / 4;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-link-3 {
+  grid-area: 1 / 5 / 2 / 6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-link {
+  font-size: 18px;
+  line-height: 32px;
+  font-family: "Anthony";
+  color: rgba(0, 0, 0, 1);
+  transition: 0.4s ease;
+  list-style-type: none;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  /* border-radius: 30px; */
+  /* border-style: solid;
+  border-color: black;
+  border-width: 1px; */
+}
+
+.nav-link:hover {
+  color: black;
+  background-color: #d3ff26;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.social-icons {
+  transition: 0.3s ease;
+  color: white;
+}
+
+.social-icons:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .container-link-1 {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .container-link-2 {
+    grid-area: 2 / 2 / 3 / 5;
+  }
+
+  .container-link-3 {
+    align-items: center;
+    grid-area: 1 / 4 / 2 / 6;
+  }
+
+  .nav-link {
+    padding: 0.5rem;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
